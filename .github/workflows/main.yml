@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "., !node_modules"
-          target: "~/app/api-rentx"
+          target: "~/app/ignite-nodejs-rentx"
           
       - name: copy file via ssh password
         uses: appleboy/ssh-action@master
