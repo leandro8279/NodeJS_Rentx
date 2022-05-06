@@ -33,4 +33,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          target: "test"
+          script: |
+            cd ~/test
