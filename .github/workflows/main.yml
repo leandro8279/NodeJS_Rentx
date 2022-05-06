@@ -33,9 +33,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: |
-            cd ~/app/ignite-nodejs-rentx
-            yarn
-            ./node_modules/.bin/typeorm migration:run
-            pm2 restart rentx_api
- 
+          script: ~/app/ignite-nodejs-rentx
