@@ -33,9 +33,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
-            whoami
-            ls -al
+          script: whoami
           source: "., !node_modules"
           target: "~/app/ignite-nodejs-rentx"
  
